@@ -72,32 +72,6 @@ INSERT INTO `permission` VALUES (2,'人事审批'),(9,'出纳付款'),(8,'总经
 UNLOCK TABLES;
 
 --
--- Table structure for table `purchase`
---
-
-DROP TABLE IF EXISTS `purchase`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `purchase` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `itemlist` text NOT NULL,
-  `total` float NOT NULL,
-  `applytime` varchar(45) DEFAULT NULL,
-  `applyer` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `purchase`
---
-
-LOCK TABLES `purchase` WRITE;
-/*!40000 ALTER TABLE `purchase` DISABLE KEYS */;
-/*!40000 ALTER TABLE `purchase` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `role`
 --
 

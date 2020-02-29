@@ -501,15 +501,6 @@ public class ActivitiController {
 		return his;
 	}
 
-	@RequestMapping(value = "/processhis", method = RequestMethod.POST)
-	@ResponseBody
-	public List<HistoricActivityInstance> processhis(@RequestParam("ywh") String ywh) {
-		String instanceid = histiryservice.createHistoricProcessInstanceQuery().processDefinitionKey("purchase")
-				.processInstanceBusinessKey(ywh).singleResult().getId();
-		List<HistoricActivityInstance> his = histiryservice.createHistoricActivityInstanceQuery()
-				.processInstanceId(instanceid).orderByHistoricActivityInstanceStartTime().asc().list();
-		return his;
-	}
 
 	@RequestMapping(value = "myleaveprocess", method = RequestMethod.GET)
 	String myleaveprocess() {

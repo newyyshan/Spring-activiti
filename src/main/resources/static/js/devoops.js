@@ -298,16 +298,8 @@ function DrawAmChart1(){
 			"value": 72
 		},
 		{
-			"title": "Purchased",
-			"value": 65
-		},
-		{
 			"title": "Contacted for support",
 			"value": 45
-		},
-		{
-			"title": "Purchased additional products",
-			"value": 36
 		}
 	];
 	chart = new AmCharts.AmFunnelChart();
